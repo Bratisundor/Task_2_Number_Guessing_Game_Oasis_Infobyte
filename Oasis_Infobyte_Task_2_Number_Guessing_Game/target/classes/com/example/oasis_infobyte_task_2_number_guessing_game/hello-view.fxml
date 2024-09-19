@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="867.0" style="-fx-background-color: DEEPSKYBLUE; -fx-border-color: DARKGOLDENROD;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oasis_infobyte_task_2_number_guessing_game.HelloController">
+   <left>
+      <SplitPane prefHeight="160.0" prefWidth="200.0" style="-fx-background-color: CYAN;" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="561.0" prefWidth="46.0" style="-fx-background-color: CYAN; -fx-background-position: CYAN; -fx-border-color: KHAKI;">
+               <children>
+                  <Pane layoutX="35.0" layoutY="11.0">
+                     <children>
+                     </children>
+                  </Pane>
+                  <Text fill="#0011ff" fontSmoothingType="LCD" layoutX="-1.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number Guessing Game" textAlignment="CENTER" wrappingWidth="208.0582275390625">
+                     <font>
+                        <Font name="Orbitron Bold" size="19.5" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="107.0" fitWidth="121.0" layoutX="38.0" layoutY="11.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@OIG4.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER" layoutX="30.899999618530273" layoutY="350.8999938964844" />
+                  <Button fx:id="Exit" alignment="CENTER" layoutX="35.0" layoutY="441.0" mnemonicParsing="false" onAction="#Exit" prefHeight="59.0" prefWidth="132.0" style="-fx-background-color: red; -fx-alignment: center; -fx-font-family: Playball; -fx-font-size: 25; -fx-border-width: 5; -fx-border-color: green;" text="Exit " textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style Italic" size="68.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Restart" alignment="CENTER" layoutX="35.0" layoutY="357.0" mnemonicParsing="false" onAction="#Restart" prefHeight="62.0" prefWidth="133.0" style="-fx-background-color: orange; -fx-alignment: center; -fx-font-family: Playball; -fx-font-style: Bold; -fx-font-size: 25; -fx-border-width: 5; -fx-border-color: brown;" text="Restart   " textFill="WHITE">
+                     <font>
+                        <Font name="Playball" size="68.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="hints" alignment="CENTER" contentDisplay="CENTER" layoutX="35.0" layoutY="282.0" mnemonicParsing="false" onAction="#hints" prefHeight="63.0" prefWidth="130.0" style="-fx-background-color: black; -fx-border-color: pink; -fx-text-fill: yellow; -fx-font-size: 25; -fx-font-family: Playball; -fx-border-width: 5;" text="Hints" textAlignment="CENTER" textFill="#edff00">
+                     <font>
+                        <Font name="Elephant" size="42.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="36.0" fitWidth="22.0" layoutX="134.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@3-512_68041.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="score" alignment="CENTER" contentDisplay="CENTER" layoutX="42.0" layoutY="162.0" text="Score : 0" textFill="#ff00a1">
+                     <font>
+                        <Font name="Baloo" size="33.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="attempts" alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="199.0" text="Attempts : 1" textFill="#ff00d9">
+                     <font>
+                        <Font name="Baloo" size="33.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="23.0" fitWidth="28.0" layoutX="132.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@exit_PNG45.png" />
+                     </image>
+                  </ImageView>
+
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </left>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #76E1BC;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="Txt_1" alignment="CENTER" layoutX="79.0" layoutY="189.0" prefHeight="245.0" prefWidth="509.0" promptText="Enter Your Answer" style="-fx-background-color: IVORY; -fx-alignment: Center; -fx-font-size: 45; -fx-font-family: Baskerville Old Face; -fx-font-style: Bold; -fx-border-width: 10; -fx-border-color: olive; -fx-border-radius: 5;">
+               <font>
+                  <Font name="Bell MT" size="40.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+             <Button fx:id="Submit" alignment="CENTER" layoutX="269.0" layoutY="448.0" mnemonicParsing="false" onAction="#Submit" prefHeight="65.0" prefWidth="150.0" style="-fx-background-color: green; -fx-border-color: blue; -fx-font-family: Playball; -fx-font-size: 28; -fx-font-style: Bold; -fx-alignment: Center; -fx-border-width: 5; -fx-border-color: red;" text="Submit   " textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+             </Button>
+
+             <ImageView fitHeight="140.0" fitWidth="157.0" layoutX="527.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pngtree-cute-robot-mascot-logo-png-image_8493119.png" />
+               </image></ImageView>
+            <Label fx:id="Prompt" alignment="CENTER" contentDisplay="CENTER" layoutX="80.0" layoutY="111.0" prefHeight="70.0" prefWidth="509.0" style="-fx-border-color: #ff007b; -fx-border-width: 5; -fx-border-radius: 18;" text="Guess a number between 1-100" textAlignment="CENTER" textFill="#0010ff">
+               <font>
+                  <Font name="Baloo" size="35.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="-62.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@restart-png-9.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="26.0" layoutX="383.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@realistic-correct-checkmark-symbol-yes-right-and-approved-icon-3d-render-illustr.png" />
+               </image>
+            </ImageView>
+
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
